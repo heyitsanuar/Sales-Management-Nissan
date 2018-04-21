@@ -1,0 +1,26 @@
+.nav{
+
+    &-item{
+        font-size: 13px;
+        padding: 15px 30px;
+
+        &.active{
+            border-bottom: 2px solid #00B0AE;
+        }
+    }
+
+    &-link{
+        color: #8F9595;
+        font-weight: bold;
+
+        &:hover{
+            color: #000;
+        }
+    }
+    
+    &--center{
+        display: flex;
+        justify-content: center;
+    }
+    
+}

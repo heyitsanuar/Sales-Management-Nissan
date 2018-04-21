@@ -1,0 +1,66 @@
+.details{
+
+    padding: 47.5px 0 150px 0;
+
+    @include atSmall{
+        padding: 47.5px 0 100px 0;
+    }
+
+    @include atMedium{
+        padding: 47.5px 0 150px 0;
+    }
+
+    &__introduction{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__title{
+        width: 100%;
+        text-align: center;
+        margin-top: 120px;
+        font-weight: bold;
+    }
+
+    &__description{
+        width: 80%;
+        margin-top: 50px;
+        margin-bottom: 0;
+        color: #8F9595;
+        text-align: center;
+
+        @include atSmall{
+            width: 100%;
+            max-width: 450px;
+            margin-top: 30px;
+        }
+
+        @include atMedium{
+            width: 100%;
+            max-width: 720px;
+            margin-top: 20px;
+        }
+    }
+
+    &__features{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 15px;
+        justify-content: center;
+
+        @include atSmall{
+            margin-top: 65px;
+        }
+
+        @include atMedium{
+            margin-top: 0;
+        }
+
+        @include atLarge{
+            margin-top: 100px;
+        }
+        
+    }
+}

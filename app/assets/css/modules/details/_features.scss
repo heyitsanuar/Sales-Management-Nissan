@@ -1,0 +1,86 @@
+.feature{
+    
+    display: flex;
+    flex-wrap: wrap;
+    height: 150px;
+    justify-content: center;
+    margin: 120px 0;
+
+    @include atSmall{
+        margin: 20px 0;
+    }
+
+    @include atMedium{
+        margin: 120px 0;
+    }
+    @include atLarge{
+        margin: 20px 0;
+    }
+
+    &__image{
+        height: 150px;
+        width: 150px;
+        object-fit: cover;
+        transition: all .3s ease;
+        
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+
+    &__info{
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0 35px;
+
+        @include atSmall{
+            width: 60%;
+        }
+
+        @include atMedium{
+            width: 90%;
+        }
+
+        @include atLarge{
+            width: 60%;
+        }
+    }
+
+    &__title{
+        margin: 30px auto;
+        font-weight: bold;
+
+        @include atSmall{
+            margin: 15px 0;
+        }
+
+        @include atMedium{
+            margin: 30px auto;
+        }
+
+        @include atLarge{
+            margin: 15px 0;
+        }
+    }
+
+    &__description{
+        text-align: center;
+        font-size: 14px;
+        margin: 0;
+        color:#8F9595;
+
+        @include atSmall{
+            text-align: left;
+        }
+
+        @include atMedium{
+            text-align: center;
+        }
+
+        @include atLarge{
+            text-align: left;
+        }
+    }
+}
