@@ -1,0 +1,63 @@
+.slide-show{
+	width: 64%;
+	height: 100%;
+
+	&__carousel{
+		height: 100vh;
+		width: 100%;
+	}
+
+	.carousel-item, .carousel-inner{
+		height: 100%;
+	}
+	
+	&__image{
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+
+	&__info{
+		display: flex;
+		flex-wrap: wrap;
+		align-content: flex-end;
+		padding: 0 0 100px 140px;
+		position: absolute;
+		height: 100%;
+	}
+
+	&__button-container{
+		border-radius: 50%;
+		background: #E13956;
+		height: 60px;
+		width: 60px;
+		z-index: 150;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 40px;
+	}
+
+	&__play-button{
+		color: #fff;
+		font-size: 22px;
+	}
+
+	&__caption{
+		width: 100%;
+		z-index: 160;
+	}
+	
+	&__title{
+		font-size: 78px;
+		font-weight: 600;
+		color: #fff;
+	}
+
+	&__description{
+		color: rgba(255,255,255,0.7);
+		font-weight: 400;
+		font-size: 22px;
+	}
+
+}
