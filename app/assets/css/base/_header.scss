@@ -1,6 +1,7 @@
 .header{
 	height: 80px;
 	display: flex;
+	background: #444444;
 
 	&__container{
 		display: flex;
@@ -10,9 +11,7 @@
 	}
 
 	&__logo-link{
-		font-size: 28px;
-		font-weight: bold;
-		color: #C70042;
+		width: 120px;
 	}
 
 	&__link{
@@ -24,7 +23,7 @@
 		transition: all .3s ease;
 
 		&:hover{
-			color: #000;
+			color: #fff;
 		}
 
 		&--is-active{
