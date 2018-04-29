@@ -1,0 +1,15 @@
+.heading{
+	padding: 95px 0 170px 0;
+
+	&__title{
+		font-size: 30px;
+		color: #444444;
+	}
+
+	&__controls{
+		display: flex;
+		justify-content: space-between;
+		align-content: center;
+		margin: 50px 0;
+	}
+}

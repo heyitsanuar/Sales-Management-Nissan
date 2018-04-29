@@ -1,0 +1,51 @@
+.table-filter{
+	
+	&__group{
+		display: flex;
+	}
+
+	&__item{
+		display: flex;
+		align-items: center;
+		margin-right: 38px;
+	}
+
+	&__title{
+		margin: 0 10px 0 0;
+	}
+
+	&__selection{
+		padding: 10px 30px;
+		background: #F1F3F4;
+		color: #444;
+		border-radius: 30px;
+
+		&:hover{
+			color: #444;
+		}
+	}
+
+	&__dropdown{
+		color: #444;
+	}
+
+	&__dropdown-menu{
+		width: 80px;
+	}
+
+	&__btn{
+		background: #CD0041;
+		border: none;
+		color: #fff;
+		border-radius: 30px;
+		padding: 10px 50px;
+		font-size: 14px;
+		transition: all .3s ease;
+
+		&:hover{
+			background: #444;
+			color: #fff;
+		}
+	}
+
+}

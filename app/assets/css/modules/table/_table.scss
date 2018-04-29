@@ -1,0 +1,31 @@
+.table{
+	box-shadow: 0px 0px 35px rgba(0,0,0,0.05); 
+	
+	&__head{
+		text-align: center;
+		box-shadow: 0px 0px 30px rgba(0,0,0,0.1); 
+	}
+
+	&__th{
+		color: #979797;
+
+		&--is-active{
+			color: #CD0041;
+		}
+	}
+
+	&__row-td{
+		border-top: 1px solid rgba(0,0,0,0.05);
+		color: #444;
+	}
+
+	&__controls{
+		display: flex;
+	}
+
+	&__dropdown-button{
+		cursor: pointer;
+		border-radius: 50%;		
+	}
+
+}
