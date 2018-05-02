@@ -17,18 +17,17 @@ gulp.task('watch', function() {
     gulp.start('cssInject'); //Looks out for any changes in the CSS files to compile and start browser reload
   });			
 
-  gulp.watch('./app/assets/js/**/*js', function(){
+  gulp.watch('./app/assets/js/**/*.js', function(){
     gulp.start('scriptsRefresh');
   });
 
 });
 
 gulp.task('cssInject', ['styles'], function(){ 
-
 	//First compiles our latest CSS and then loads it to our browser sync task whenever we save changes
-
 	return gulp.src('./app/temp/css/styles.css')
 			   .pipe(browserSync.stream());
+
 });
 
 gulp.task('scriptsRefresh',['scripts'],function(){
