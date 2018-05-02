@@ -1,0 +1,15 @@
+.separator{
+
+	width: 100%;
+	height: 3px;
+	background: $mainGrey;
+
+	&--white{
+		background: #fff;
+	}
+
+	&--dashed{
+		border-bottom: 2px dashed rgba(0,0,0,0.3);
+	}
+
+}

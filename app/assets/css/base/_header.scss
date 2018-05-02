@@ -1,0 +1,125 @@
+.header{
+	height: 50px;
+	display: flex;
+	background: $mainBlack;
+
+	@include atSmall{
+		height: 60px;
+	}
+
+	@include atMedium{
+		height: 70px;
+	}
+
+	@include atLarge{
+		height: 80px;
+	}
+
+	&__container{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+	}
+
+	&__logo-link{
+		width: 80px; 
+
+		@include atSmall{
+			width: 100px;
+		}
+
+		@include atMedium{
+			width: 110px;
+		}
+
+		@include atLarge{
+			width: 120px;
+		}
+	}
+
+	&__menu{
+		display: none;
+		position: absolute;
+		top: 50px;
+		left: 0;
+		width: 100%;
+		background: rgba(0,0,0,0.6);
+
+		@include atSmall{
+			top: 60px;
+		}
+
+		@include atMedium{
+			display: block;
+			position: static;
+			background: none;
+			width: auto;
+		}
+
+		&--is-visible{
+			display: block;
+		}
+	}
+
+	&__link{
+		display: block;
+		background: none;
+		border: none;
+		padding: 10px 25px;
+		color: #fff;
+		font-size: 14px;
+		transition: all .3s ease;
+
+		&:hover{
+			color: #fff;
+		}
+
+		@include atSmall{
+			padding: 15px 25px;
+		}
+
+		@include atMedium{
+			display: initial;
+			color: #A9AEB8;
+			font-size: 13px;
+			padding: 10px 15px;
+		}
+
+		@include atLarge{
+			font-size: 15px;
+			padding: 10px 25px;
+		}
+
+		&--is-active{
+			background: $mainRed;
+
+			@include atMedium{
+				color: #fff;
+			}
+		}
+
+		&--sign-link{
+			@include atMedium{
+				display: none;
+			}
+		}
+
+		&--sign-drop{
+			display: none;
+
+			@include atMedium{
+				display: initial;
+			}
+		}
+	}
+
+	&__button{
+		font-size: 20px;
+		color: #fff;
+
+		@include atMedium{
+			display: none;
+		}
+	}
+}
