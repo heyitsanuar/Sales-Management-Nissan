@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Welcome</title>
 	<link rel="stylesheet" href="temp/css/normalize.css">
 	<link rel="stylesheet" href="temp/css/bootstrap.min.css">
@@ -12,7 +13,10 @@
 	<section class="main">
 		<section class="login">
 			<div class="login__container">
-				<img class="login__logo" src="assets/img/login/logo.png" alt="">
+				<picture>
+			      <source srcset="assets/img/login/logo.png" media="(min-width: 1024px)">
+			      <img srcset="assets/img/login/logo.png" alt="Coastal view of ocean and mountains" class="login__logo">
+			    </picture>
 				<form class="login__form" action="">
 					<div class="login__input-group input-group">
 					  <div class="input-group-prepend">

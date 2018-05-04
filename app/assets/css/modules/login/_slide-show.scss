@@ -1,6 +1,10 @@
 .slide-show{
-	width: 64%;
-	height: 100%;
+	display: none;
+
+	@include atLarge{
+		display: block;
+		width: 64%;
+	}
 
 	&__carousel{
 		height: 100vh;
@@ -21,9 +25,13 @@
 		display: flex;
 		flex-wrap: wrap;
 		align-content: flex-end;
-		padding: 0 0 100px 140px;
+		padding: 0;
 		position: absolute;
 		height: 100%;
+
+		@include atSmall{
+			padding: 0 0 100px 140px;
+		}
 	}
 
 	&__button-container{
