@@ -1,0 +1,34 @@
+.listdrop{
+	font-weight: bold;
+	width: 100%;
+	list-style: none;
+	padding-left: 10px;
+	max-width: 200px;
+
+	&__item{
+		display: flex;
+		justify-content: space-between;
+		transition: all .3s ease;
+
+		&:hover{
+			.listdrop__text{
+				text-decoration: none;
+				color: #000;		
+			}
+		}
+	}
+
+	&__text{
+		margin-bottom: 10px;
+		font-size: 14px;
+		color: #b5bcbe;
+
+		&--heading{
+			color: #868f92;	
+		}
+
+		&--active{
+			color: #eb3b5a;	
+		}
+	}
+}

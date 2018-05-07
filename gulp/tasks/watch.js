@@ -15,7 +15,7 @@ gulp.task('watch', function() {
 
   gulp.watch('./app/assets/css/**/*.scss', function() { 
     gulp.start('cssInject'); //Looks out for any changes in the CSS files to compile and start browser reload
-  });			
+  });
 
   gulp.watch('./app/assets/js/**/*.js', function(){
     gulp.start('scriptsRefresh');

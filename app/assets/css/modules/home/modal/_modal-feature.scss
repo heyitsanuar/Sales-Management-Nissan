@@ -1,0 +1,52 @@
+.modal-feature{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+
+	&__sprite{
+		display: inline-block;
+		background: #000;
+		height: 50px;
+		width: 50px;
+		padding: 10px;
+		transition: all .3s ease;
+
+		&:hover{
+			background: #b5bcbe;
+		}
+
+		&--green{
+			background: #34BA9D;
+		}
+
+		&--red{
+			background: #E75244;
+		}
+
+		&--yellow{
+			background: #F3BC47;
+		}
+
+		&--blue{
+			background: #48A6D9;
+		}
+	}
+
+	p{
+		margin-bottom: 0;
+	}
+
+	&__info{
+		padding-left: 13px;
+	}
+
+	&__amount{
+		font-size: 20px;
+	}
+
+	&__name{
+		color: #868F92;
+	}
+
+}

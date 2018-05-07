@@ -1,0 +1,19 @@
+.car{
+	height: 155px;
+	width: 245px;
+	margin: 15px 0 15px auto;
+
+	&__image{
+		width: 100%;
+		heigth: 100%;
+		background: black;
+	}
+
+	&__name{
+		position: absolute;
+		font-weight: bold;
+		bottom: 0;
+		padding: 0 0 20px 20px;
+		color: #fff;
+	}
+}

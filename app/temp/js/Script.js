@@ -50,9 +50,14 @@
 
 	var _Header2 = _interopRequireDefault(_Header);
 
+	var _Gallery = __webpack_require__(3);
+
+	var _Gallery2 = _interopRequireDefault(_Gallery);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var menu = new _Header2.default();
+	var gallery = new _Gallery2.default();
 
 /***/ }),
 /* 1 */
@@ -80,6 +85,11 @@
 
 			this.menuIcon = (0, _jquery2.default)("#menu-icon");
 			this.menu = (0, _jquery2.default)("#menu");
+
+			this.image = (0, _jquery2.default)("#modal-image");
+			this.thumbGroup = (0, _jquery2.default)("#thumb-group");
+			this.thumbs = (0, _jquery2.default)(".modal__thumbnail");
+
 			this.events();
 		}
 
@@ -87,11 +97,25 @@
 			key: "events",
 			value: function events() {
 				this.menuIcon.click(this.toggleMenu.bind(this));
+				this.thumbs.click(this.toggleActiveThumb);
+				this.thumbs.click(this.changeImage.bind(this));
 			}
 		}, {
 			key: "toggleMenu",
 			value: function toggleMenu() {
 				this.menu.toggleClass("header__menu--is-visible");
+			}
+		}, {
+			key: "changeImage",
+			value: function changeImage() {
+				var sourceToSet = this.thumbGroup.find('.modal__thumbnail--is-active').attr('src');
+				this.image.attr('src', sourceToSet);
+			}
+		}, {
+			key: "toggleActiveThumb",
+			value: function toggleActiveThumb() {
+				(0, _jquery2.default)(this).siblings().removeClass('modal__thumbnail--is-active');
+				(0, _jquery2.default)(this).addClass('modal__thumbnail--is-active');
 			}
 		}]);
 
@@ -10469,6 +10493,61 @@
 	return jQuery;
 	} );
 
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _jquery = __webpack_require__(2);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var Gallery = function () {
+		function Gallery() {
+			_classCallCheck(this, Gallery);
+
+			this.image = (0, _jquery2.default)("#modal-image");
+			this.thumbGroup = (0, _jquery2.default)("#thumb-group");
+			this.thumbs = (0, _jquery2.default)(".modal__thumbnail");
+			this.events();
+		}
+
+		_createClass(Gallery, [{
+			key: "events",
+			value: function events() {
+				this.thumbs.click(this.toggleActiveThumb);
+				this.thumbs.click(this.changeImage.bind(this));
+			}
+		}, {
+			key: "changeImage",
+			value: function changeImage() {
+				var sourceToSet = this.thumbGroup.find('.modal__thumbnail--is-active').attr('src');
+				this.image.attr('src', sourceToSet);
+			}
+		}, {
+			key: "toggleActiveThumb",
+			value: function toggleActiveThumb() {
+				(0, _jquery2.default)(this).siblings().removeClass('modal__thumbnail--is-active');
+				(0, _jquery2.default)(this).addClass('modal__thumbnail--is-active');
+			}
+		}]);
+
+		return Gallery;
+	}();
+
+	exports.default = Gallery;
 
 /***/ })
 /******/ ]);

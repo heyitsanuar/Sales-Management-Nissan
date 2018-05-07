@@ -1,0 +1,26 @@
+.filter{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-top: 30px;
+	border-right: 1px solid rgba(0,0,0,0.1);
+
+	&__title{
+		width: 100%;
+		font-weight: bold;
+
+		&--main{
+			padding: 0 25px;
+			margin-bottom: 45px;
+			color: #505458;
+		}
+
+		&--control{
+			color: #868F92;
+		}
+	}
+
+	&__listdrop{
+		margin-bottom: 0;
+	}
+}

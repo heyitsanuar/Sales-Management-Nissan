@@ -1,0 +1,129 @@
+.range{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 50px;
+
+	&__item{
+		width: 100%;
+		padding: 0 25px;
+		margin-bottom: 25px;
+	}
+
+	&__input{ //Custom range input
+
+		-webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+		width: 100%; /* Specific width is required for Firefox. */
+		background: transparent; /* Otherwise white in Chrome */
+
+		&::-webkit-slider-thumb {
+		  -webkit-appearance: none;
+		}
+
+		&:focus {
+		  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+		}
+
+		&::-ms-track {
+		  width: 100%;
+		  cursor: pointer;
+
+		  /* Hides the slider so custom styles can be added */
+		  background: transparent; 
+		  border-color: transparent;
+		  color: transparent;
+		}
+
+		/* Special styling for WebKit/Blink */
+		&::-webkit-slider-thumb {
+		  -webkit-appearance: none;
+		  height: 20px;
+		  width: 20px;
+		  border-radius: 50%;
+		  background: #fff;
+		  cursor: pointer;
+		  margin-top: -8px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+		  box-shadow: 0px 0px 1px #000000;
+		}
+
+		/* All the same stuff for Firefox */
+		&::-moz-range-thumb {
+		  height: 20px;
+		  width: 20px;
+		  border-radius: 50%;
+		  background: #fff;
+		  cursor: pointer;
+		  box-shadow: 0px 0px 1px #000000;
+		}
+
+		/* All the same stuff for IE */
+		&::-ms-thumb {
+		  height: 20px;
+		  width: 20px;
+		  border-radius: 50%;
+		  background: #fff;
+		  cursor: pointer;
+		  box-shadow: 0px 0px 1px #000000;
+		  margin-top: 0px;
+		}
+
+
+
+		&::-webkit-slider-runnable-track {
+		  width: 100%;
+		  height: 3px;
+		  cursor: pointer;
+		  background: #EB3B5A;
+		}
+
+		&::-moz-range-track {
+		  width: 100%;
+		  height: 3px;
+		  cursor: pointer;
+		  background: #EB3B5A;
+		}
+
+		&::-ms-track {
+		  width: 100%;
+		  height: 3px;
+		  cursor: pointer;
+		  background: transparent;
+		  border-color: transparent;
+		  border-width: 16px 0;
+		  color: transparent;
+		}
+
+		&::-ms-fill-lower {
+		  background: #EB3B5A;
+		}
+
+		&:focus::-ms-fill-lower {
+		  background: #EB3B5A;
+		}
+		&::-ms-fill-upper {
+		  background: #868F92;
+		}
+
+		&:focus::-ms-fill-upper {
+		  background: #868F92;
+		}
+	}
+
+	&__interval{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__amount{
+		width: 50%;
+		color: #505458;
+		font-weight: bold;
+		
+		&--max{
+			text-align: right;
+		}
+
+		&--min{
+			text-align: left;
+		}
+	}
+}

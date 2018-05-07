@@ -1,0 +1,13 @@
+.main{
+	padding-top: 63px;
+}
+
+.cars{
+	
+	&__car-list{
+		padding: 20px 0 57px 0;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+}
