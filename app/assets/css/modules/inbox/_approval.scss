@@ -1,9 +1,16 @@
 .approval{
 	padding: 25px 0;
-	margin: 0 auto;
+	margin: 0 auto 20px;
 	width: 300px;
-	border: 1px solid rgba(0,0,0,0.1);
-	border-radius: 10px;
+
+	@include atSmall{
+		margin: 0 auto 30px;
+	}
+
+	@include atMedium{
+		border-radius: 10px;
+		border: 1px solid rgba(0,0,0,0.1);
+	}
 
 	&__info{
 		width: 50%;

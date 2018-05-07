@@ -1,12 +1,20 @@
 .requests{
-	padding: 55px 38px 55px 45px;
+	padding: 55px 25px 55px 25px;
 	border-right: 1px solid rgba(0,0,0,0.05);
-	height: 1047px;
+	min-height: 1047px;
 	overflow: hidden;
 
+	@include atSmall{
+		padding: 55px 38px 55px 45px;
+	}
+
 	&__title{
-		font-size: 40px;
+		font-size: 30px;
 		color: $mainGrey;
+
+		@include atSmall{
+			font-size: 40px;
+		}
 	}
 
 	&__container{
