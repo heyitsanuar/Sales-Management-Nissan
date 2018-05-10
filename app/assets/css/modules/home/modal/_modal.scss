@@ -59,8 +59,25 @@
 		color: #868F92;
 	}
 
+	&__exit{
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		color: $mainGrey;
+		font-size: 20px;
+		cursor: pointer;
+	}
+
 	&--lg{
-		max-width: 1000px;
+		width: 100%;
+
+		@include atMedium{
+			max-width: 800px;
+		}
+
+		@include atLarge{
+			max-width: 1000px;
+		}
 	}
 
 	&--fade{
