@@ -54,10 +54,15 @@
 
 	var _Gallery2 = _interopRequireDefault(_Gallery);
 
+	var _Filter = __webpack_require__(4);
+
+	var _Filter2 = _interopRequireDefault(_Filter);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var menu = new _Header2.default();
 	var gallery = new _Gallery2.default();
+	var filter = new _Filter2.default();
 
 /***/ }),
 /* 1 */
@@ -10529,7 +10534,6 @@
 			value: function events() {
 				this.thumbs.click(this.toggleActiveThumb);
 				this.thumbs.click(this.changeImage.bind(this));
-				this.closeButton.click(this.closeModal.bind(this));
 			}
 		}, {
 			key: "changeImage",
@@ -10549,6 +10553,56 @@
 	}();
 
 	exports.default = Gallery;
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _jquery = __webpack_require__(2);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var Filter = function () {
+	  function Filter() {
+	    _classCallCheck(this, Filter);
+
+	    this.filter = (0, _jquery2.default)("#filter");
+	    this.filterShowButton = (0, _jquery2.default)("#filter-show");
+	    this.filterBackButton = (0, _jquery2.default)("#filter-back");
+	    this.carsPage = (0, _jquery2.default)("#cars-page");
+	    this.events();
+	  }
+
+	  _createClass(Filter, [{
+	    key: "events",
+	    value: function events() {
+	      this.filterShowButton.click(this.toggleFilter.bind(this));
+	      this.filterBackButton.click(this.toggleFilter.bind(this));
+	    }
+	  }, {
+	    key: "toggleFilter",
+	    value: function toggleFilter() {
+	      this.filter.toggleClass("d-none");
+	      this.carsPage.toggleClass("d-none");
+	    }
+	  }]);
+
+	  return Filter;
+	}();
+
+	exports.default = Filter;
 
 /***/ })
 /******/ ]);

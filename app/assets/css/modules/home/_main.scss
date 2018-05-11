@@ -1,13 +1,35 @@
-.main{
-	padding-top: 63px;
+.main-home{
+
+	@include atMedium{
+		padding-top: 63px;
+	}
+
+	&__container{
+		padding-left: 0;
+		padding-right: 0;
+
+		@include atSmall{
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
 }
 
 .cars{
+	background: #F0F0F3;
+
+	@include atSmall{
+		background: #fff;
+	}
 	
 	&__car-list{
-		padding: 20px 0 57px 0;
+		padding-bottom: 20px;
 		display: flex;
 		flex-wrap: wrap;
+
+		@include atSmall{
+			padding: 20px 0 57px 0;
+		}
 	}
 	
 }

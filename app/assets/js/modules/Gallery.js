@@ -12,7 +12,6 @@ class Gallery{
 	events(){
 		this.thumbs.click(this.toggleActiveThumb);
 		this.thumbs.click(this.changeImage.bind(this));
-		this.closeButton.click(this.closeModal.bind(this));
 	}
 	
 	changeImage(){

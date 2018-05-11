@@ -1,33 +1,73 @@
 .modal{
 
 	&__car{
-		height: 700px;
+		height: 1000px;
 		display: flex;
-		flex-wrap: wrap;
+		border: none;
+		border-radius: 0;
+
+		@include atMedium{
+			height: 880px;
+			border: 1px solid rgba(0,0,0,.2);
+		}
+
+		@include atLarge{
+			height: 700px;
+			flex-wrap: wrap;
+		}
 	}
 
 	&__gallery{
 		display: inline-block;
-		height: 600px;
-		width: 600px;
+		width: 100%;
+
+		@include atMedium{
+			height: 380px;
+			width: 600px;
+		}
+
+		@include atLarge{
+			height: 600px;
+			width: 600px;
+		}
 	}
 
 	&__image{
 		width: 100%;
-		height: 618px;
+		height: 300px;
 		object-fit: cover;
+
+		@include atMedium{
+			height: 300px;
+		}
+
+		@include atLarge{
+			height: 618px;
+		}
 	}
 
 	&__thumb-group{
 		display: flex;
 		width: 100%;
-		height: 80px;
+		height: 50px;
+
+		@include atMedium{
+			height: 80px;
+		}
 	}
 
 	&__thumbnail{
-		height: 80px;
-		width: 100px;
+		height: 50px;
+		width: 16.66%;
 		object-fit: cover;
+		
+		@include atSmall{
+			height: 80px;
+		}
+
+		@include atMedium{
+			width: 100px;
+		}
 
 		&:hover:not(.modal__thumbnail--is-active){
 			opacity: 0.5;
@@ -39,12 +79,27 @@
 	}
 
 	&__info{
-		width: 350px;
+		width: 100%;
 		height: 700px;
 		padding: 0 40px;
 		display: flex;
 		flex-wrap: wrap;
 		align-content: center;
+
+		@include atSmall{
+			text-align: center;
+		}
+
+		@include atMedium{
+			width: 100%;
+			height: 500px;
+		}
+
+		@include atLarge{
+			text-align: left;
+			width: 350px;
+			height: 700px;
+		}
 	}
 
 	&__title{
@@ -70,9 +125,15 @@
 
 	&--lg{
 		width: 100%;
-
+		margin: 0;
+		
+		@include atSmall{
+			max-width: 100%;
+		}
+		
 		@include atMedium{
-			max-width: 800px;
+			max-width: 600px;
+			margin: auto;
 		}
 
 		@include atLarge{

@@ -36,10 +36,11 @@
 			</nav>
 		</div>
 	</header>
-	<section class="main">
-		<div class="container d-flex">
-			<aside class="filter col-lg-3">
+	<section class="main-home">
+		<div class="main-home__container container d-flex">
+			<aside class="filter col-md-4 col-lg-3 d-none d-md-block" id="filter">
 				<div class="container-fluid bg-white"></div>
+				<i class="filter__icon fas fa-times d-md-none" id="filter-back"></i>
 				<p class="filter__title filter__title--main">FILTER</p>
 				<ul class="filter__listdrop listdrop">
 					<li class="listdrop__item listdrop__item--active">
@@ -127,12 +128,14 @@
 					</div>
 				</div>
 			</aside>
-			<section class="cars col-lg-9">
+			<section class="cars col-sm-12 col-md-8 col-lg-9 d-md-block" id="cars-page">
 				<div class="cars__search">
-
+					<div class="car__container">
+						<i class="fas fa-filter d-md-none" id="filter-show"></i>
+					</div>
 				</div>
 				<div class="cars__car-list">
-					<div class="col-md-6 col-lg-4">
+					<div class="car__container col-xs-12 col-sm-6 col-md-6 col-lg-4">
 						<div class="car" data-toggle="modal" data-target=".bd-example-modal-lg">
 							<img class="car__image" src="assets/img/home/car-1.jpg" alt="">
 							<div class="car__info">
@@ -140,7 +143,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-lg-4">
+					<div class="car__container col-xs-12 col-sm-6 col-md-6 col-lg-4">
 						<div class="car" data-toggle="modal" data-target=".bd-example-modal-lg">
 							<img class="car__image" src="assets/img/home/car-2.jpg" alt="">
 							<div class="car__info">
@@ -148,7 +151,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-lg-4">
+					<div class="car__container col-xs-12 col-sm-6 col-md-6 col-lg-4">
 						<div class="car" data-toggle="modal" data-target=".bd-example-modal-lg">
 							<img class="car__image" src="assets/img/home/car-3.jpg" alt="">
 							<div class="car__info">
@@ -156,7 +159,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-lg-4">
+					<div class="car__container col-xs-12 col-sm-6 col-md-6 col-lg-4">
 						<div class="car" data-toggle="modal" data-target=".bd-example-modal-lg">
 							<img class="car__image" src="assets/img/home/car-4.jpg" alt="">
 							<div class="car__info">
@@ -164,7 +167,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-lg-4">
+					<div class="car__container col-xs-12 col-sm-6 col-md-6 col-lg-4">
 						<div class="car" data-toggle="modal" data-target=".bd-example-modal-lg">
 							<img class="car__image" src="assets/img/home/car-5.jpg" alt="">
 							<div class="car__info">
@@ -172,7 +175,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-lg-4">
+					<div class="car__container col-xs-12 col-sm-6 col-md-6 col-lg-4">
 						<div class="car" data-toggle="modal" data-target=".bd-example-modal-lg">
 							<img class="car__image" src="assets/img/home/car-6.jpg" alt="">
 							<div class="car__info">
@@ -180,7 +183,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-lg-4">
+					<div class="car__container col-xs-12 col-sm-6 col-md-6 col-lg-4">
 						<div class="car" data-toggle="modal" data-target=".bd-example-modal-lg">
 							<img class="car__image" src="assets/img/home/car-7.jpg" alt="">
 							<div class="car__info">
@@ -188,7 +191,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-lg-4">
+					<div class="car__container col-xs-12 col-sm-6 col-md-6 col-lg-4">
 						<div class="car" data-toggle="modal" data-target=".bd-example-modal-lg">
 							<img class="car__image" src="assets/img/home/car-8.jpg" alt="">
 							<div class="car__info">
@@ -196,7 +199,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-lg-4">
+					<div class="car__container col-xs-12 col-sm-6 col-md-6 col-lg-4">
 						<div class="car" data-toggle="modal" data-target=".bd-example-modal-lg">
 							<img class="car__image" src="assets/img/home/car-1.jpg" alt="">
 							<div class="car__info">
@@ -204,7 +207,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-lg-4">
+					<div class="car__container col-xs-12 col-sm-6 col-md-6 col-lg-4">
 						<div class="car" data-toggle="modal" data-target=".bd-example-modal-lg">
 							<img class="car__image" src="assets/img/home/car-2.jpg" alt="">
 							<div class="car__info">
@@ -212,7 +215,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-lg-4">
+					<div class="car__container col-xs-12 col-sm-6 col-md-6 col-lg-4">
 						<div class="car" data-toggle="modal" data-target=".bd-example-modal-lg">
 							<img class="car__image" src="assets/img/home/car-3.jpg" alt="">
 							<div class="car__info">
@@ -220,7 +223,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-lg-4">
+					<div class="car__container col-xs-12 col-sm-6 col-md-6 col-lg-4">
 						<div class="car" data-toggle="modal" data-target=".bd-example-modal-lg">
 							<img class="car__image" src="assets/img/home/car-4.jpg" alt="">
 							<div class="car__info">
