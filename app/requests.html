@@ -37,11 +37,21 @@
 		</div>
 	</header>
 	<section class="inbox">
-		<section class="filter col-xl-2 bg-dark">
-			
+		<section class="filter__inbox col-sm-4 col-lg-2 col-xl-2 d-none d-sm-block d-md-none d-lg-block bg-dark" id="filter-inbox">
+			<nav class="filter__inbox-list">
+				<i class="fas fa-angle-left d-sm-none mb-3 text-light" id="btn-inbox-hide"></i>
+				<a href="#" class="filter__inbox-link filter__inbox-link--is-active">Todos</a>
+				<a href="#" class="filter__inbox-link">Leídos</a>
+				<a href="#" class="filter__inbox-link">No leídos</a>
+				<a href="#" class="filter__inbox-link">Aceptados</a>
+				<a href="#" class="filter__inbox-link">Rechazados</a>
+			</nav>
 		</section>
-		<section class="requests col-12 col-md-5 col-lg-6 col-xl-5 d-md-block" id="request-group">
-			<h1 class="requests__title">Request</h1>
+		<section class="requests col-xs-12 col-sm-8 col-md-5 col-lg-5 col-xl-5 d-sm-block" id="request-group">
+			<div class="requests__heading">
+				<h1 class="requests__title">Request</h1>
+				<i class="requests__icon fas fa-filter d-sm-none" id="btn-inbox-show"></i>
+			</div>
 			<div class="requests__container">
 				<div class="request">
 					<div class="request__heading">
@@ -101,9 +111,9 @@
 				</div>
 			</div>
 		</section>
-		<section class="message col-12 col-md-7 col-lg-6 col-xl-5 d-none d-md-block" id="message">
+		<section class="message col-12 col-md-7 col-lg-5 col-xl-5 d-none d-md-block" id="message">
 			<div class="message__banner">
-				<img class="message__image" src="/assets/img/car-banner.jpg" alt="">
+				<img class="message__image" src="assets/img/car-banner.jpg" alt="">
 				<i class="message__back fas fa-angle-left d-md-none" id="message-back"></i>
 				<h2 class="message__title">Request for X-Terra</h2>
 			</div>

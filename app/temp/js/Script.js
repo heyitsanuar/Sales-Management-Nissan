@@ -10503,6 +10503,9 @@
 	    this.requestGroup = (0, _jquery2.default)("#request-group");
 	    this.message = (0, _jquery2.default)("#message");
 	    this.backButton = (0, _jquery2.default)("#message-back");
+	    this.filter = (0, _jquery2.default)("#filter-inbox");
+	    this.btnShowFilter = (0, _jquery2.default)("#btn-inbox-show");
+	    this.btnHideFilter = (0, _jquery2.default)("#btn-inbox-hide");
 	    this.events();
 	  }
 
@@ -10511,11 +10514,19 @@
 	    value: function events() {
 	      this.requests.click(this.toggleMessage.bind(this));
 	      this.backButton.click(this.toggleMessage.bind(this));
+	      this.btnShowFilter.click(this.toggleInboxMenu.bind(this));
+	      this.btnHideFilter.click(this.toggleInboxMenu.bind(this));
 	    }
 	  }, {
 	    key: "toggleMessage",
 	    value: function toggleMessage() {
 	      this.message.toggleClass("d-none");
+	      this.requestGroup.toggleClass("d-none");
+	    }
+	  }, {
+	    key: "toggleInboxMenu",
+	    value: function toggleInboxMenu() {
+	      this.filter.toggleClass("d-none");
 	      this.requestGroup.toggleClass("d-none");
 	    }
 	  }]);
