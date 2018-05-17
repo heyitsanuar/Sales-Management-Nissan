@@ -1,0 +1,136 @@
+.modal-form{
+    padding: 25px;
+
+    &--text-centered{
+        text-align: center;
+    }
+    
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title{
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+    &__exit{
+        font-size: 14px;
+        color: $mainGrey;
+        cursor: pointer;
+    }
+
+    &__body{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
+    &__group{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+
+        &--small{
+            width: 47%;
+        }
+
+        &--medium{
+            width: 75%;
+        }
+
+        &--large{
+            width: 100%;
+        }
+
+        &--centered{
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+    }
+
+    &__label{
+        font-size: 14px;
+        margin-bottom: 10px;
+
+        &--large{
+          margin-left: auto;
+          margin-right: auto;
+        }
+    }
+
+    &__input{
+        width: 100%;
+        padding: 5px 17px;
+        font-size: 14px;
+        color: $mainGrey;
+        border: 1px solid rgba(0,0,0,0.2);
+    }
+
+    &__parts-to-carry{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    &__part{
+        width: 138px;
+        height: 138px;
+        cursor: pointer;
+
+        &--is-active{
+            border: 1px solid rgba(0,0,0,0.2);
+        }
+    }
+
+    &__delete{
+
+        &-title{
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        &-description{
+            color: $mainGrey;
+        }
+    }
+
+    &__footer{
+        margin-top: 40px;
+
+        &--centered{
+            margin: 20px auto;
+        }
+    }
+
+    &__btn-group{
+        float: right;
+
+        &--centered{
+            float: initial;
+        }
+    }
+
+    &__btn{
+        text-decoration: none;
+        color: $mainBlack;
+        padding: 10px 30px;
+        transition: all .3s ease;
+
+        &--cancel:hover{
+            color: #FF3750;
+            background: #FFF5F6;
+        }
+
+        &--confirm:hover{
+            color: #22CDA7;
+            background: #F4FCFA;
+        }
+    }
+}

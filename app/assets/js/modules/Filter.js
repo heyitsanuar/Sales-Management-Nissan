@@ -7,7 +7,7 @@ class Filter{
         this.filterShowButton = $("#filter-show");
         this.filterBackButton = $("#filter-back");
         this.carsPage = $("#cars-page");
-		this.events();
+        this.events();
 	}
 
 	events(){

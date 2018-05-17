@@ -58,11 +58,16 @@
 
 	var _Filter2 = _interopRequireDefault(_Filter);
 
+	var _Modal = __webpack_require__(5);
+
+	var _Modal2 = _interopRequireDefault(_Modal);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var menu = new _Header2.default();
 	var gallery = new _Gallery2.default();
 	var filter = new _Filter2.default();
+	var modal = new _Modal2.default();
 
 /***/ }),
 /* 1 */
@@ -10561,7 +10566,7 @@
 	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
-	  value: true
+	       value: true
 	});
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -10575,34 +10580,80 @@
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 	var Filter = function () {
-	  function Filter() {
-	    _classCallCheck(this, Filter);
+	       function Filter() {
+	              _classCallCheck(this, Filter);
 
-	    this.filter = (0, _jquery2.default)("#filter");
-	    this.filterShowButton = (0, _jquery2.default)("#filter-show");
-	    this.filterBackButton = (0, _jquery2.default)("#filter-back");
-	    this.carsPage = (0, _jquery2.default)("#cars-page");
-	    this.events();
-	  }
+	              this.filter = (0, _jquery2.default)("#filter");
+	              this.filterShowButton = (0, _jquery2.default)("#filter-show");
+	              this.filterBackButton = (0, _jquery2.default)("#filter-back");
+	              this.carsPage = (0, _jquery2.default)("#cars-page");
+	              this.events();
+	       }
 
-	  _createClass(Filter, [{
-	    key: "events",
-	    value: function events() {
-	      this.filterShowButton.click(this.toggleFilter.bind(this));
-	      this.filterBackButton.click(this.toggleFilter.bind(this));
-	    }
-	  }, {
-	    key: "toggleFilter",
-	    value: function toggleFilter() {
-	      this.filter.toggleClass("d-none");
-	      this.carsPage.toggleClass("d-none");
-	    }
-	  }]);
+	       _createClass(Filter, [{
+	              key: "events",
+	              value: function events() {
+	                     this.filterShowButton.click(this.toggleFilter.bind(this));
+	                     this.filterBackButton.click(this.toggleFilter.bind(this));
+	              }
+	       }, {
+	              key: "toggleFilter",
+	              value: function toggleFilter() {
+	                     this.filter.toggleClass("d-none");
+	                     this.carsPage.toggleClass("d-none");
+	              }
+	       }]);
 
-	  return Filter;
+	       return Filter;
 	}();
 
 	exports.default = Filter;
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _jquery = __webpack_require__(2);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var Modal = function () {
+	  function Modal() {
+	    _classCallCheck(this, Modal);
+
+	    this.roles = (0, _jquery2.default)(".modal-form__part");
+	    this.events();
+	  }
+
+	  _createClass(Modal, [{
+	    key: "events",
+	    value: function events() {
+	      this.roles.click(this.toggleRole);
+	    }
+	  }, {
+	    key: "toggleRole",
+	    value: function toggleRole() {
+	      (0, _jquery2.default)(this).siblings().removeClass("modal-form__part--is-active");
+	      (0, _jquery2.default)(this).addClass("modal-form__part--is-active");
+	    }
+	  }]);
+
+	  return Modal;
+	}();
+
+	exports.default = Modal;
 
 /***/ })
 /******/ ]);
