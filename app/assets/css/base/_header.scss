@@ -69,6 +69,14 @@
 		border: none;
 		padding: 10px 25px;
 		color: #fff;
+		width: 120px;
+	}
+
+	&__link{
+		background: none;
+		border: none;
+		padding: 10px 25px;
+		color: #A9AEB8;
 		font-size: 14px;
 		transition: all .3s ease;
 
@@ -121,6 +129,11 @@
 
 		@include atMedium{
 			display: none;
+		}
+
+		&--is-active{
+			background: #C70042;
+			color: #fff;
 		}
 	}
 }
