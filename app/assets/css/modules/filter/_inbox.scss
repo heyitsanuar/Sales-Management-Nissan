@@ -1,0 +1,34 @@
+.filter__inbox{
+	min-height: 1047px;
+
+	&-list{
+		padding: 0 30px;
+		padding-top: 30px;
+		max-width: 400px;
+		margin: 0 auto;
+	}
+
+	&-link{
+		display: block;
+		padding: 10px 20px;
+		color: #fff;
+		font-size: 14px;
+		transition: all .3s ease;
+
+		&:hover{
+			color: #fff;
+		}
+
+		&:hover:not(.filter__inbox-link--is-active){
+			background: $mainBlack;
+		}
+
+		@include atSmall{
+
+		}
+
+		&--is-active{
+			background: $mainRed;
+		}
+	}
+}

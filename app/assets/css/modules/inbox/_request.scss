@@ -1,0 +1,40 @@
+.request{
+	border-top: 1px solid rgba(0,0,0,0.1);
+	padding: 30px 0 20px 0;
+
+	@include atSmall{
+		padding: 30px 0 20px 0;
+	}
+
+	p{
+		margin-bottom: 0;
+	}
+
+	&--is-active{
+		border: 1px solid rgba(0,0,0,0.1);
+		margin-left: -20px;
+	    margin-right: -20px;
+	    padding-right: 20px;
+	    padding-left: 20px;
+	}
+
+	&__heading{
+		display: flex;
+		justify-content: space-between;
+		font-size: 14px;
+	}
+
+	&__name{
+		color: $mainGrey;
+	}
+
+	&__title{
+		font-size: 18px;
+		color: $mainBlack;
+	}
+
+	&__description{
+		font-size: 14px;
+		color: $mainGrey;
+	}
+}

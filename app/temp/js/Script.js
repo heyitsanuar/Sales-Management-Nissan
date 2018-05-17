@@ -54,11 +54,15 @@
 
 	var _Gallery2 = _interopRequireDefault(_Gallery);
 
-	var _Filter = __webpack_require__(4);
+	var _Inbox = __webpack_require__(4);
+
+	var _Inbox2 = _interopRequireDefault(_Inbox);
+
+	var _Filter = __webpack_require__(5);
 
 	var _Filter2 = _interopRequireDefault(_Filter);
 
-	var _Modal = __webpack_require__(5);
+	var _Modal = __webpack_require__(6);
 
 	var _Modal2 = _interopRequireDefault(_Modal);
 
@@ -68,6 +72,7 @@
 	var gallery = new _Gallery2.default();
 	var filter = new _Filter2.default();
 	var modal = new _Modal2.default();
+	var inbox = new _Inbox2.default();
 
 /***/ }),
 /* 1 */
@@ -10566,6 +10571,67 @@
 	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _jquery = __webpack_require__(2);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var Inbox = function () {
+	  function Inbox() {
+	    _classCallCheck(this, Inbox);
+
+	    this.requests = (0, _jquery2.default)(".request");
+	    this.requestGroup = (0, _jquery2.default)("#request-group");
+	    this.message = (0, _jquery2.default)("#message");
+	    this.backButton = (0, _jquery2.default)("#message-back");
+	    this.filter = (0, _jquery2.default)("#filter-inbox");
+	    this.btnShowFilter = (0, _jquery2.default)("#btn-inbox-show");
+	    this.btnHideFilter = (0, _jquery2.default)("#btn-inbox-hide");
+	    this.events();
+	  }
+
+	  _createClass(Inbox, [{
+	    key: "events",
+	    value: function events() {
+	      this.requests.click(this.toggleMessage.bind(this));
+	      this.backButton.click(this.toggleMessage.bind(this));
+	      this.btnShowFilter.click(this.toggleInboxMenu.bind(this));
+	      this.btnHideFilter.click(this.toggleInboxMenu.bind(this));
+	    }
+	  }, {
+	    key: "toggleMessage",
+	    value: function toggleMessage() {
+	      this.message.toggleClass("d-none");
+	      this.requestGroup.toggleClass("d-none");
+	    }
+	  }, {
+	    key: "toggleInboxMenu",
+	    value: function toggleInboxMenu() {
+	      this.filter.toggleClass("d-none");
+	      this.requestGroup.toggleClass("d-none");
+	    }
+	  }]);
+
+	  return Inbox;
+	}();
+
+	exports.default = Inbox;
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
 	       value: true
 	});
 
@@ -10610,7 +10676,7 @@
 	exports.default = Filter;
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";

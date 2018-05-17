@@ -1,0 +1,61 @@
+.message{
+
+	&__banner{
+		height: 250px;
+	}
+
+	&__back{
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		font-size: 20px;
+		color: rgba(0,0,0,0.40);
+	}
+
+	&__image{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	&__title{
+		font-size: 30px;
+		font-weight: bold;
+		color: #fff;
+		position: absolute;
+		top: 170px;
+		left: 40px;
+	}
+
+	&__container{
+		padding: 50px 20px;
+
+		@include atSmall{
+			padding: 50px 30px;
+		}
+	}
+	
+	&__info{
+		min-height: 370px;
+		width: 100%;
+		background: #FDFDF5;
+		padding: 25px 30px;
+	}
+
+	&__heading{
+		display: flex;
+		justify-content: space-between;
+		color: $mainGrey;
+	}
+
+	&__subject{
+		margin-top: 35px;
+		font-size: 18px;
+		color: $mainBlack;
+		margin-bottom: 25px;
+	}
+
+	&__description{
+		color: $mainGrey;
+	}
+}
