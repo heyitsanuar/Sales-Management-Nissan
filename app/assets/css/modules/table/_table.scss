@@ -26,7 +26,13 @@
 
 	&__dropdown-button{
 		cursor: pointer;
-		border-radius: 50%;		
+		border-radius: 50%;	
+	}
+
+	&__dropdown-item{
+		&:active {
+			background: $mainRed;
+		}
 	}
 
 }

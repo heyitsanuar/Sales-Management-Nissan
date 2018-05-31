@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="temp/css/normalize.css">
 	<link rel="stylesheet" href="temp/css/bootstrap.min.css">
-	<script src="https://use.fontawesome.com/66675779bc.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="stylesheet" href="temp/css/styles.css">
 </head>
 <body>
@@ -26,8 +26,6 @@
 				    <span class="sr-only">Toggle Dropdown</span>
 				  </a>
 				  <div class="dropdown-menu dropdown-menu-right">
-				    <a class="dropdown-item" href="#">About</a>
-				    <a class="dropdown-item" href="#">Settings</a>
 				    <a class="dropdown-item" href="#">Sign out</a>
 				  </div>
 				</div>
@@ -41,45 +39,30 @@
 				<div class="table-filter__group">
 					<div class="table-filter__item">
 						<p class="table-filter__title">Policy</p>
-						<div class="btn-group d-flex align-items-center">
-						  <a href="" class="table-filter__selection">All</a>
-						  <a href="" class="table-filter__dropdown dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						    <span class="sr-only">Toggle Dropdown</span>
-						  </a>
-						  <div class="table-filter__dropdown-menu dropdown-menu dropdown-menu-right">
-						    <a class="table-filter__item dropdown-item" href="#">All</a>
-						    <a class="table-filter__item dropdown-item" href="#">Few</a>
-						    <a class="table-filter__item dropdown-item" href="#">Less</a>
-						  </div>
-						</div>
+						<select class="modal-form__input modal-form__input--select" name="" id="">
+								<option value="">Villa de Álvarez</option>
+								<option value="">Colima</option>
+								<option value="">Tecomán</option>
+								<option value="">Manzanillo</option>
+						</select>
 					</div>
 					<div class="table-filter__item">
 						<p class="table-filter__title">Policy</p>
-						<div class="btn-group d-flex align-items-center">
-						  <a href="" class="table-filter__selection">All</a>
-						  <a href="" class="table-filter__dropdown dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						    <span class="sr-only">Toggle Dropdown</span>
-						  </a>
-						  <div class="table-filter__dropdown-menu dropdown-menu dropdown-menu-right">
-						    <a class="table-filter__item dropdown-item" href="#">All</a>
-						    <a class="table-filter__item dropdown-item" href="#">Few</a>
-						    <a class="table-filter__item dropdown-item" href="#">Less</a>
-						  </div>
-						</div>
+						<select class="modal-form__input modal-form__input--select" name="" id="">
+								<option value="">Villa de Álvarez</option>
+								<option value="">Colima</option>
+								<option value="">Tecomán</option>
+								<option value="">Manzanillo</option>
+						</select>
 					</div>
 					<div class="table-filter__item">
 						<p class="table-filter__title">Policy</p>
-						<div class="btn-group d-flex align-items-center">
-						  <a href="" class="table-filter__selection">All</a>
-						  <a href="" class="table-filter__dropdown dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						    <span class="sr-only">Toggle Dropdown</span>
-						  </a>
-						  <div class="table-filter__dropdown-menu dropdown-menu dropdown-menu-right">
-						    <a class="table-filter__item dropdown-item" href="#">All</a>
-						    <a class="table-filter__item dropdown-item" href="#">Few</a>
-						    <a class="table-filter__item dropdown-item" href="#">Less</a>
-						  </div>
-						</div>
+						<select class="modal-form__input modal-form__input--select" name="" id="">
+								<option value="">Villa de Álvarez</option>
+								<option value="">Colima</option>
+								<option value="">Tecomán</option>
+								<option value="">Manzanillo</option>
+						</select>
 					</div>
 				</div>
 				<a class="table-filter__btn" href="#" data-toggle="modal" data-target=".add-employee">
@@ -235,7 +218,7 @@
 			</table>
 		</div>
 
-		<!--Add employee-->
+		<!--Add employee global manager-->
 		<div class="modal--fade modal fade add-employee" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="add-branch">
 			  <div class="modal-dialog modal--form-size">
 				  <div class="modal-form modal-content">
@@ -251,10 +234,24 @@
 						  <div class="modal-form__group modal-form__group--small">
 							  <label for="" class="modal-form__label">Last Name</label>
 							  <input type="text" class="modal-form__input">
-						  </div>
-						  <div class="modal-form__group modal-form__group--large">
-							  <label for="" class="modal-form__label">Branch</label>
-							  <input type="text" class="modal-form__input">
+							</div>
+							<div class="modal-form__group modal-form__group--small">
+									<label for="" class="modal-form__label">State</label>
+									<select class="modal-form__input modal-form__input--select" name="" id="">
+										<option value="">Villa de Álvarez</option>
+										<option value="">Colima</option>
+										<option value="">Tecomán</option>
+										<option value="">Manzanillo</option>
+									</select>
+								</div>
+						  <div class="modal-form__group modal-form__group--small">
+								<label for="" class="modal-form__label">Branch</label>
+								<select class="modal-form__input modal-form__input--select" name="" id="">
+									<option value="">Rancagua</option>
+									<option value="">Caguama</option>
+									<option value="">Branco</option>
+									<option value="">Manzanas</option>
+								</select>
 						  </div>
 						  <div class="modal-form__group modal-form__group--small">
 							  <label for="" class="modal-form__label">Phone</label>
@@ -271,8 +268,14 @@
 						  <div class="modal-form__group modal-form__group--large">
 							  <label for="" class="modal-form__label">Part to carry out</label>
 							  <div class="modal-form__parts-to-carry">
-								  <img src="" alt="" class="modal-form__part">
-								  <img src="" alt="" class="modal-form__part">
+									<div class="modal-form__part">
+										<img src="assets/img/icons/employees/building.svg" alt="">
+										<p>Manager</p>
+									</div>
+									<div class="modal-form__part">
+										<img src="assets/img/icons/employees/worker.svg" alt="">
+										<p>Salesman</p>
+									</div>
 							  </div>
 						  </div>
 					  </div>
@@ -284,9 +287,9 @@
 					  </div>
 				  </div>
 			  </div>
-		  </div>
+		</div>
 		
-		<!--Edit employee-->
+		<!--Edit employee global manager-->
 		<div class="modal--fade modal fade edit-employee" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="add-branch">
 			  <div class="modal-dialog modal--form-size">
 				  <div class="modal-form modal-content">
@@ -320,12 +323,18 @@
 							  <input type="text" class="modal-form__input">
 						  </div>
 						  <div class="modal-form__group modal-form__group--large">
-							  <label for="" class="modal-form__label">Part to carry out</label>
-							  <div class="modal-form__parts-to-carry">
-								  <img src="" alt="" class="modal-form__part">
-								  <img src="" alt="" class="modal-form__part">
-							  </div>
-						  </div>
+									<label for="" class="modal-form__label">Part to carry out</label>
+									<div class="modal-form__parts-to-carry">
+										<div class="modal-form__part">
+											<img src="assets/img/icons/employees/building.svg" alt="">
+											<p>Manager</p>
+										</div>
+										<div class="modal-form__part">
+											<img src="assets/img/icons/employees/worker.svg" alt="">
+											<p>Salesman</p>
+										</div>
+									</div>
+								</div>
 					  </div>
 					  <div class="modal-form__footer">
 						  <div class="modal-form__btn-group">
@@ -335,10 +344,90 @@
 					  </div>
 				  </div>
 			  </div>
-		  </div>
+		</div>
+
+		<!--Add employee agency manager-->
+		<div class="modal--fade modal fade add-employee" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="add-branch">
+				<div class="modal-dialog modal--form-size">
+					<div class="modal-form modal-content">
+						<div class="modal-form__header">
+							<h2 class="modal-form__title">Add Employee</h2>
+							<i class="modal-form__exit fas fa-times" id="modal-exit" data-dismiss="modal" aria-label="Close"></i>
+						</div>
+						<div class="modal-form__body">
+							<div class="modal-form__group modal-form__group--small">
+								<label for="" class="modal-form__label">Name</label>
+								<input type="text" class="modal-form__input">
+							</div>
+							<div class="modal-form__group modal-form__group--small">
+								<label for="" class="modal-form__label">Last Name</label>
+								<input type="text" class="modal-form__input">
+							</div>
+							<div class="modal-form__group modal-form__group--small">
+								<label for="" class="modal-form__label">Phone</label>
+								<input type="text" class="modal-form__input">
+							</div>
+							<div class="modal-form__group modal-form__group--small">
+								<label for="" class="modal-form__label">Email</label>
+								<input type="email" class="modal-form__input">
+							</div>
+							<div class="modal-form__group modal-form__group--large">
+								<label for="" class="modal-form__label">Address</label>
+								<input type="text" class="modal-form__input">
+							</div>
+						</div>
+						<div class="modal-form__footer">
+							<div class="modal-form__btn-group">
+								<a href="#" class="modal-form__btn modal-form__btn--cancel" data-dismiss="modal" aria-label="Close">Cancel</a>
+								<a href="#" class="modal-form__btn modal-form__btn--confirm">Confirm</a>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+			
+		<!--Edit employee agency manager-->
+		<div class="modal--fade modal fade add-employee" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="add-branch">
+			  <div class="modal-dialog modal--form-size">
+				  <div class="modal-form modal-content">
+					  <div class="modal-form__header">
+						  <h2 class="modal-form__title">Add Employee</h2>
+						  <i class="modal-form__exit fas fa-times" id="modal-exit" data-dismiss="modal" aria-label="Close"></i>
+					  </div>
+					  <div class="modal-form__body">
+						  <div class="modal-form__group modal-form__group--small">
+							  <label for="" class="modal-form__label">Name</label>
+							  <input type="text" class="modal-form__input">
+						  </div>
+						  <div class="modal-form__group modal-form__group--small">
+							  <label for="" class="modal-form__label">Last Name</label>
+							  <input type="text" class="modal-form__input">
+						  </div>
+						  <div class="modal-form__group modal-form__group--small">
+							  <label for="" class="modal-form__label">Phone</label>
+							  <input type="text" class="modal-form__input">
+						  </div>
+						  <div class="modal-form__group modal-form__group--small">
+							  <label for="" class="modal-form__label">Email</label>
+							  <input type="email" class="modal-form__input">
+						  </div>
+						  <div class="modal-form__group modal-form__group--large">
+							  <label for="" class="modal-form__label">Address</label>
+							  <input type="text" class="modal-form__input">
+						  </div>
+					  </div>
+					  <div class="modal-form__footer">
+						  <div class="modal-form__btn-group">
+							  <a href="#" class="modal-form__btn modal-form__btn--cancel" data-dismiss="modal" aria-label="Close">Cancel</a>
+							  <a href="#" class="modal-form__btn modal-form__btn--confirm">Confirm</a>
+						  </div>
+					  </div>
+				  </div>
+			  </div>
+		</div>
 
 		<div class="modal--fade modal fade save-changes" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="add-branch">
-		  <div class="modal-dialog modal-dialog-centered modal--form-size">
+		  <div class="modal-dialog modal-dialog-centered">
 			  <div class="modal-form modal-content modal-form--text-centered">
 				  <p class="modal-form__delete-title">¿Seguro que desea guardar los cambios?</p>
 				  <p class="modal-form__delete-description">Este elemento presenta cambios</p>
@@ -353,7 +442,7 @@
 		</div>
 
 		<div class="modal--fade modal fade delete-element" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="add-branch">
-		  <div class="modal-dialog modal-dialog-centered modal--form-size">
+		  <div class="modal-dialog modal-dialog-centered">
 			  <div class="modal-form modal-content modal-form--text-centered">
 				  <p class="modal-form__delete-title">¿Seguro que desea eliminar este elemento?</p>
 				  <div class="modal-form__footer modal-form__footer--centered">

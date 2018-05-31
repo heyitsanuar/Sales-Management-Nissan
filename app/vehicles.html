@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="temp/css/normalize.css">
 	<link rel="stylesheet" href="temp/css/bootstrap.min.css">
-	<script src="https://use.fontawesome.com/66675779bc.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="stylesheet" href="temp/css/styles.css">
 </head>
 <body>
@@ -26,8 +26,6 @@
 				    <span class="sr-only">Toggle Dropdown</span>
 				  </a>
 				  <div class="dropdown-menu dropdown-menu-right">
-				    <a class="dropdown-item" href="#">About</a>
-				    <a class="dropdown-item" href="#">Settings</a>
 				    <a class="dropdown-item" href="#">Sign out</a>
 				  </div>
 				</div>
@@ -41,45 +39,30 @@
 				<div class="table-filter__group">
 					<div class="table-filter__item">
 						<p class="table-filter__title">Policy</p>
-						<div class="btn-group d-flex align-items-center">
-						  <a href="" class="table-filter__selection">All</a>
-						  <a href="" class="table-filter__dropdown dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						    <span class="sr-only">Toggle Dropdown</span>
-						  </a>
-						  <div class="table-filter__dropdown-menu dropdown-menu dropdown-menu-right">
-						    <a class="table-filter__item dropdown-item" href="#">All</a>
-						    <a class="table-filter__item dropdown-item" href="#">Few</a>
-						    <a class="table-filter__item dropdown-item" href="#">Less</a>
-						  </div>
-						</div>
+						<select class="modal-form__input modal-form__input--select" name="" id="">
+								<option value="">Villa de Álvarez</option>
+								<option value="">Colima</option>
+								<option value="">Tecomán</option>
+								<option value="">Manzanillo</option>
+						</select>
 					</div>
 					<div class="table-filter__item">
 						<p class="table-filter__title">Policy</p>
-						<div class="btn-group d-flex align-items-center">
-						  <a href="" class="table-filter__selection">All</a>
-						  <a href="" class="table-filter__dropdown dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						    <span class="sr-only">Toggle Dropdown</span>
-						  </a>
-						  <div class="table-filter__dropdown-menu dropdown-menu dropdown-menu-right">
-						    <a class="table-filter__item dropdown-item" href="#">All</a>
-						    <a class="table-filter__item dropdown-item" href="#">Few</a>
-						    <a class="table-filter__item dropdown-item" href="#">Less</a>
-						  </div>
-						</div>
+						<select class="modal-form__input modal-form__input--select" name="" id="">
+								<option value="">Villa de Álvarez</option>
+								<option value="">Colima</option>
+								<option value="">Tecomán</option>
+								<option value="">Manzanillo</option>
+						</select>
 					</div>
 					<div class="table-filter__item">
 						<p class="table-filter__title">Policy</p>
-						<div class="btn-group d-flex align-items-center">
-						  <a href="" class="table-filter__selection">All</a>
-						  <a href="" class="table-filter__dropdown dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						    <span class="sr-only">Toggle Dropdown</span>
-						  </a>
-						  <div class="table-filter__dropdown-menu dropdown-menu dropdown-menu-right">
-						    <a class="table-filter__item dropdown-item" href="#">All</a>
-						    <a class="table-filter__item dropdown-item" href="#">Few</a>
-						    <a class="table-filter__item dropdown-item" href="#">Less</a>
-						  </div>
-						</div>
+						<select class="modal-form__input modal-form__input--select" name="" id="">
+								<option value="">Villa de Álvarez</option>
+								<option value="">Colima</option>
+								<option value="">Tecomán</option>
+								<option value="">Manzanillo</option>
+						</select>
 					</div>
 				</div>
 				<a class="table-filter__btn" href="#" data-toggle="modal" data-target=".add-vehicle">
@@ -90,16 +73,14 @@
 				<thead class="table__head">
 					<tr class="table__row-th">
 						<th class="table__th table__th--is-active">MODEL <span class=""></span></th>
-						<th class="table__th">VERSION <span class=""></span></th>
-						<th class="table__th">COST <span class=""></span></th>
+						<th class="table__th">VERSIONS <span class=""></span></th>
 						<th class="table__th">CATEGORY <span class=""></span></th>
 					</tr>
 				</thead>
 				<tbody class="table__body">
 					<tr class="table__row-td">
 						<td class="table__td">Altima</td>
-						<td class="table__td">XD-3</td>
-						<td class="table__td">$100000</td>
+						<td class="table__td">3</td>
 						<td class="table__td">Pick Up</td>
 						<td class="table__controls">
 							<img class="table__edit" src="" alt="">
@@ -117,8 +98,7 @@
 					</tr>
 					<tr class="table__row-td">
 						<td class="table__td">Altima</td>
-						<td class="table__td">XD-3</td>
-						<td class="table__td">$100000</td>
+						<td class="table__td">3</td>
 						<td class="table__td">Pick Up</td>
 						<td class="table__controls">
 							<img class="table__edit" src="" alt="">
@@ -136,84 +116,7 @@
 					</tr>
 					<tr class="table__row-td">
 						<td class="table__td">Altima</td>
-						<td class="table__td">XD-3</td>
-						<td class="table__td">$100000</td>
-						<td class="table__td">Pick Up</td>
-						<td class="table__controls">
-							<img class="table__edit" src="" alt="">
-							<img class="table__delete" src="" alt="">
-							<div class="table__dropdown dropdown dropleft">
-							  <a class="table__dropdown-button" id="data1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							    ...
-							  </a>
-							  <div class="table__dropdown-menu dropdown-menu" aria-labelledby="data1">
-							    <a class="table__dropdown-item dropdown-item" href="#" data-toggle="modal" data-target=".edit-vehicle">Edit</a>
-							    <a class="table__dropdown-item dropdown-item" href="#" data-toggle="modal" data-target=".delete-element">Delete</a>
-							  </div>
-							</div>
-						</td>
-					</tr>
-					<tr class="table__row-td">
-						<td class="table__td">Altima</td>
-						<td class="table__td">XD-3</td>
-						<td class="table__td">$100000</td>
-						<td class="table__td">Pick Up</td>
-						<td class="table__controls">
-							<img class="table__edit" src="" alt="">
-							<img class="table__delete" src="" alt="">
-							<div class="table__dropdown dropdown dropleft">
-							  <a class="table__dropdown-button" id="data1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							    ...
-							  </a>
-							  <div class="table__dropdown-menu dropdown-menu" aria-labelledby="data1">
-							    <a class="table__dropdown-item dropdown-item" href="#" data-toggle="modal" data-target=".edit-vehicle">Edit</a>
-							    <a class="table__dropdown-item dropdown-item" href="#" data-toggle="modal" data-target=".delete-element">Delete</a>
-							  </div>
-							</div>
-						</td>
-					</tr>
-					<tr class="table__row-td">
-						<td class="table__td">Altima</td>
-						<td class="table__td">XD-3</td>
-						<td class="table__td">$100000</td>
-						<td class="table__td">Pick Up</td>
-						<td class="table__controls">
-							<img class="table__edit" src="" alt="">
-							<img class="table__delete" src="" alt="">
-							<div class="table__dropdown dropdown dropleft">
-							  <a class="table__dropdown-button" id="data1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							    ...
-							  </a>
-							  <div class="table__dropdown-menu dropdown-menu" aria-labelledby="data1">
-							    <a class="table__dropdown-item dropdown-item" href="#" data-toggle="modal" data-target=".edit-vehicle">Edit</a>
-							    <a class="table__dropdown-item dropdown-item" href="#" data-toggle="modal" data-target=".delete-element">Delete</a>
-							  </div>
-							</div>
-						</td>
-					</tr>
-					<tr class="table__row-td">
-						<td class="table__td">Altima</td>
-						<td class="table__td">XD-3</td>
-						<td class="table__td">$100000</td>
-						<td class="table__td">Pick Up</td>
-						<td class="table__controls">
-							<img class="table__edit" src="" alt="">
-							<img class="table__delete" src="" alt="">
-							<div class="table__dropdown dropdown dropleft">
-							  <a class="table__dropdown-button" id="data1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							    ...
-							  </a>
-							  <div class="table__dropdown-menu dropdown-menu" aria-labelledby="data1">
-							    <a class="table__dropdown-item dropdown-item" href="#" data-toggle="modal" data-target=".edit-vehicle">Edit</a>
-							    <a class="table__dropdown-item dropdown-item" href="#" data-toggle="modal" data-target=".delete-element">Delete</a>
-							  </div>
-							</div>
-						</td>
-					</tr>
-					<tr class="table__row-td">
-						<td class="table__td">Altima</td>
-						<td class="table__td">XD-3</td>
-						<td class="table__td">$100000</td>
+						<td class="table__td">3</td>
 						<td class="table__td">Pick Up</td>
 						<td class="table__controls">
 							<img class="table__edit" src="" alt="">
@@ -350,7 +253,7 @@
 
 
 		<div class="modal--fade modal fade save-changes" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="add-branch">
-		  <div class="modal-dialog modal-dialog-centered modal--form-size">
+		  <div class="modal-dialog modal-dialog-centered">
 			  <div class="modal-form modal-content modal-form--text-centered">
 				  <p class="modal-form__delete-title">¿Seguro que desea guardar los cambios?</p>
 				  <p class="modal-form__delete-description">Este elemento presenta cambios</p>
@@ -365,7 +268,7 @@
 		</div>
 
 		<div class="modal--fade modal fade delete-element" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="add-branch">
-		  <div class="modal-dialog modal-dialog-centered modal--form-size">
+		  <div class="modal-dialog modal-dialog-centered">
 			  <div class="modal-form modal-content modal-form--text-centered">
 				  <p class="modal-form__delete-title">¿Seguro que desea eliminar este elemento?</p>
 				  <div class="modal-form__footer modal-form__footer--centered">
