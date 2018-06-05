@@ -46,6 +46,10 @@
 			background: #444;
 			color: #fff;
 		}
+
+		&:focus{
+			outline: 0;
+		}
 	}
 
 }
